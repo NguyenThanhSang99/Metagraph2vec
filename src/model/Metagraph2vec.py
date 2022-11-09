@@ -122,14 +122,7 @@ class Metagraph2vecDataset(Dataset):
                     for i, u in enumerate(word_ids):
                         for j, v in enumerate(
                                 word_ids[max(i - self.window_size, 0):i] + word_ids[i + 1:i + self.window_size]):
-                            # for j, v in enumerate(
-                            #
-                            #         word_ids[max(i - self.window_size, 0):i + self.window_size]):
 
-                            # for j, v in enumerate(
-                            #
-                            #         word_ids[max(i - self.window_size, 0):min(len(word_ids) - 1,i + self.window_size)]):
-                            # end = min[len(word_ids) - 1,i + self.window_size]
                             assert u < self.data.word_count
                             assert v < self.data.word_count
                             # if u == v:
