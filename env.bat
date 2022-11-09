@@ -1,0 +1,1 @@
+call Metagraph2vec/Scripts/activate.bat
