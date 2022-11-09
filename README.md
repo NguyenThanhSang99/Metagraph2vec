@@ -15,4 +15,4 @@
 
 ### To build model:
 
-- Running `python index.py`
+- Running `python main.py`
